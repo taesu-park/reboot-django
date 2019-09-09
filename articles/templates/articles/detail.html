@@ -1,0 +1,12 @@
+{% extends 'articles/base.html' %}
+{% block body %}
+<h1>{{ article.id }}번글</h1>
+<h2>{{ article.title }}</h2>
+<h3>작성일자 : {{ article.created_at }}</h3>
+<h3>수정일자 : {{ article.updated_at }}</h3>
+<hr>
+<p>{{ article.content }}</p>
+<a href="/articles/">목록으로</a>
+<a href="/articles/{{ article.pk }}/delete/">[x]</a>
+<a href="/articles/{{ article.pk }}/edit/">수정</a>
+{% endblock %}
