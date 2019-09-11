@@ -1,0 +1,6 @@
+{% extends 'jobs/base.html' %}
+{% block body %}
+<h1>결과!</h1>
+<h2>{{ past_life.name }}님은 전생에 {{ past_life.job }}였습니다!</h2>
+<img src="{{ image_url }}" alt="{{ past_life.job }}">
+{% endblock %}
